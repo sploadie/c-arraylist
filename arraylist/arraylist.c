@@ -6,7 +6,7 @@
 /*   By: tgauvrit <tgauvrit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/24 11:50:42 by tgauvrit          #+#    #+#             */
-/*   Updated: 2014/11/24 18:42:54 by tgauvrit         ###   ########.fr       */
+/*   Updated: 2014/12/03 19:32:28 by tgauvrit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void		set_arraylist_functions(t_arraylist *arlst)
 	arlst->resize = x_arraylist_resize;
 	arlst->shift = x_arraylist_shift;
 	arlst->push = x_arraylist_push;
+	arlst->sort = x_arraylist_sort;
+	arlst->del = x_arraylist_del;
 }
 
 t_arraylist	*arraylist(void *elem, size_t reset_buf)
